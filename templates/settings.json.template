@@ -1,0 +1,30 @@
+{
+  "permissions": {
+    "deny": [
+      "Edit(//c/Users/emili/OneDrive/Pacific-Outcomes/**)",
+      "Read(**/.env)",
+      "Read(**/.env.*)",
+      "Read(**/*.pem)",
+      "Read(**/*.key)",
+      "Read(**/*.p12)",
+      "Read(**/*.pfx)",
+      "Read(**/credentials.json)",
+      "Read(**/secrets/**)",
+      "Edit(**/.env)",
+      "Edit(**/.env.*)",
+      "Edit(**/*.pem)",
+      "Edit(**/*.key)",
+      "Edit(**/*.p12)",
+      "Edit(**/*.pfx)",
+      "Edit(**/credentials.json)",
+      "Edit(**/secrets/**)",
+      "Read(//c/Users/emili/OneDrive/Pacific-Outcomes/admin/banking/**)",
+      "Read(//c/Users/emili/OneDrive/Pacific-Outcomes/admin/taxes/**)",
+      "Read(//c/Users/emili/OneDrive/Pacific-Outcomes/admin/legal/github-recovery-codes.txt)",
+      "Read(//c/Users/emili/OneDrive/Pacific-Outcomes/clients/*/NDA/**)",
+      "Read(//c/Users/emili/OneDrive/Pacific-Outcomes/clients/*/Original Docs/**)",
+      "Read(//c/Users/emili/OneDrive/Pacific-Outcomes/clients/*/originals/**)",
+      "Read(//c/Users/emili/OneDrive/Pacific-Outcomes/clients/*/confidential/**)"
+    ]
+  }
+}

@@ -1,0 +1,17 @@
+# Universal safe spaces (_locked convention)
+**/_locked/**
+
+# Credentials and secrets
+**/.env
+**/.env.*
+**/*.pem
+**/*.key
+**/*.p12
+**/*.pfx
+**/credentials.json
+**/secrets/**
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini

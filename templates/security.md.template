@@ -1,0 +1,49 @@
+# Security Rules — e44cg-mobile-[PURPOSE]
+
+> Source template: `e44cg-mobile_governance/templates/security.md.template`
+
+## Async-first posture
+
+This workspace runs async — Claude works while Emilio is not actively watching.
+
+**Default behavior:** Produce research, plans, and [PURPOSE-SPECIFIC OUTPUT]. Do not take actions. When in doubt, write a plan and wait.
+
+## Data classification
+
+| Tier | Description | Rules |
+|------|-------------|-------|
+| **Public** | Published patterns, open research | No restrictions |
+| **Internal** | Draft plans, research notes, unpublished work | Work freely; don't transmit to external services without approval |
+| **Sensitive** | API keys, tokens, credentials, personal data | Never hardcode. Use environment variables. Add to deny rules. |
+
+## Core security rules
+
+1. **No credentials in files.** Ever.
+2. **Blast radius principle.** If the worst case isn't limited to inconvenience or isn't reversible, write a note and wait for Emilio.
+3. **No dependency installs.** This is a markdown workspace.
+4. **No network requests without explicit approval.**
+5. **No system-level changes.**
+6. **All output is draft** until Emilio reviews it in a desktop session.
+
+## Git safety
+
+- Never force push.
+- Never amend published commits.
+- Commit messages in plain language.
+- Review `git diff` before committing — summarize changes to Emilio.
+
+## Cross-project isolation
+
+- Cannot edit any Pacific-Outcomes file (hard deny).
+- Cannot read PO's sensitive paths: banking, taxes, NDA, client originals, `_locked` folders (hard deny).
+- General PO files readable only when Emilio explicitly initiates cross-pollination.
+- If work here needs PO data, stop and discuss with Emilio.
+
+## Mobile repo scoping
+
+- Can read/edit other `e44cg-mobile-*` repos.
+- Cannot edit `e44cg-workspace` (desktop) or `e44cg-mobile_governance`.
+
+## The `_locked` convention
+
+Any folder named `_locked` is globally denied. Create `_locked` subfolders for sensitive data.

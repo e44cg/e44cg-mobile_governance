@@ -1,0 +1,61 @@
+# e44cg-mobile-[PURPOSE] — [SHORT DESCRIPTION]
+
+**Version:** 1.0 | **Date:** [DATE]
+
+[One-line description of what this repo does and why it exists.]
+
+> Source template: `e44cg-mobile_governance/templates/CLAUDE.md.template`
+
+---
+
+## Identity and scope
+
+- This is a mobile/async workspace for [PURPOSE].
+- All output is markdown: [list output types — research, workplans, to-do lists, prompts, etc.].
+- No code, no dependency installs, no build steps, no system-level changes.
+- GitHub account: `e44cg` (personal). Never push to `pacific-outcomes/` org.
+
+## Async defaults
+
+This workspace is designed for async use — Claude works while Emilio is away.
+
+- **Produce research and plans, do not take actions.**
+- **All output is draft.** Nothing here is final until Emilio reviews it in a desktop session.
+- **No external network requests** without explicit approval.
+- **No installs.** This is a markdown workspace.
+- **No system changes.**
+- **Conservative by default.** When in doubt, write a plan and wait.
+
+## Output protocol
+
+- File headers should include `e44cg-mobile-[PURPOSE]` so output is traceable when transferred.
+- Organize output into folders by topic or date, depending on the use case.
+- When work is ready for desktop review, note it in CLAUDE.local.md under "Ready for transfer."
+
+## Isolation — HARD RULE
+
+Same rules as all e44cg workspaces:
+
+- Never mention client names, engagement details, or NDA-covered materials. No exceptions.
+- **Hard deny (Edit):** Cannot edit any Pacific-Outcomes file.
+- **Hard deny (Read):** Cannot read PO's sensitive paths: banking, taxes, NDA, client originals, `_locked` folders.
+- **Controlled cross-pollination is allowed** when Emilio initiates it.
+- **The `_locked` convention:** Any folder named `_locked` is globally denied.
+
+## Mobile repo scoping
+
+- This repo can read/edit other `e44cg-mobile-*` repos.
+- This repo should not edit the desktop workspace (`e44cg-workspace`).
+- This repo should not edit the governance repo (`e44cg-mobile_governance`) — only read its templates.
+
+## Decision protocol
+
+- Present 2-3 options with tradeoffs on strategic or structural questions.
+- Provide a recommendation with reasoning. Wait for approval.
+- Do not assume silence means approval.
+
+## Non-coder rules
+
+Emilio cannot read or write code. Plain-language explanations are mandatory.
+- Before creating files, explain the purpose and structure in plain language.
+- After completing work, summarize: what changed, what files exist, what the current state is.
