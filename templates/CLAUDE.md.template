@@ -38,7 +38,7 @@ Same rules as all e44cg workspaces:
 
 - Never mention client names, engagement details, or NDA-covered materials. No exceptions.
 - **Hard deny (Edit):** Cannot edit any Pacific-Outcomes file.
-- **Hard deny (Read):** Cannot read PO's sensitive paths: banking, taxes, NDA, client originals, `_locked` folders.
+- **Hard deny (Read):** Cannot read PO's sensitive paths: banking, taxes, recovery codes, NDA, client originals, confidential folders, `_locked` folders.
 - **Controlled cross-pollination is allowed** when Emilio initiates it.
 - **The `_locked` convention:** Any folder named `_locked` is globally denied.
 
@@ -56,6 +56,6 @@ Same rules as all e44cg workspaces:
 
 ## Non-coder rules
 
-Emilio cannot read or write code. Plain-language explanations are mandatory.
+- Emilio cannot read or write code. Plain-language explanations are mandatory.
 - Before creating files, explain the purpose and structure in plain language.
 - After completing work, summarize: what changed, what files exist, what the current state is.

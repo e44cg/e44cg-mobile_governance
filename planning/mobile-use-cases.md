@@ -23,11 +23,11 @@ Use this section to sketch out potential mobile repos. For each, describe:
 
 ### Example format
 
-**Name:** `e44cg-mobile-research`
-**What it does:** Produces research summaries on topics Emilio requests.
-**Output type:** Markdown files with structured analysis.
-**How often:** As needed.
-**Transfer target:** e44cg desktop or PO depending on topic.
+- **Name:** `e44cg-mobile-research`
+- **What it does:** Produces research summaries on topics Emilio requests.
+- **Output type:** Markdown files with structured analysis.
+- **How often:** As needed.
+- **Transfer target:** e44cg desktop or PO depending on topic.
 
 ---
 

@@ -33,7 +33,7 @@ This workspace runs async — Claude works while Emilio is not actively watching
 ## Cross-project isolation
 
 - This workspace cannot edit any Pacific-Outcomes file (hard deny in settings.json).
-- This workspace cannot read PO's sensitive paths: banking, taxes, NDA, client originals, `_locked` folders (hard deny).
+- This workspace cannot read PO's sensitive paths: banking, taxes, recovery codes, NDA, client originals, confidential folders, `_locked` folders (hard deny).
 - General PO files (strategy, outreach) are readable only when Emilio explicitly initiates cross-pollination.
 - If work here needs data from Pacific-Outcomes, that is a red flag — stop and discuss with Emilio.
 
